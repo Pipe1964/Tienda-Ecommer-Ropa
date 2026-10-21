@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ATELIER NORTE — tienda de ropa contemporánea. Encuentra prendas versátiles y arma tu próximo look.">
+  <meta name="theme-color" content="#f4f1eb">
+  <title>ATELIER NORTE — Vestir a tu manera</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="topbar">ENVÍOS A TODA COLOMBIA · NUEVA COLECCIÓN DISPONIBLE</div>
+  <header class="header">
+    <a class="logo" href="#inicio" aria-label="Atelier Norte, inicio">ATELIER<span>NORTE.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" id="mainNav" aria-label="Navegación principal">
+      <a href="#novedades">Novedades</a>
+      <a href="#coleccion">Colección</a>
+      <a href="#nosotros">Nuestra esencia</a>
+      <a href="#contacto">Contacto</a>
+      <a class="nav-shop" href="#coleccion">Explorar tienda <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> COLECCIÓN  /  2026</p>
+        <h1>Menos ruido.<br><em>Más estilo.</em></h1>
+        <p class="hero-text">Prendas que se sienten bien, combinan fácil y hablan por ti. Descubre una forma más personal de vestir.</p>
+        <div class="hero-actions">
+          <a href="#coleccion" class="button button-dark">Descubrir colección <span>↗</span></a>
+          <a href="#nosotros" class="under-link">Conoce nuestra esencia</a>
+        </div>
+        <div class="hero-footnote"><span>01</span> ESENCIALES PARA TODOS LOS DÍAS</div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1400&q=85" alt="Personas con looks urbanos y contemporáneos">
+        <div class="image-label"><span>ESTILO SIN ESFUERZO</span><strong>Vístete para ti.</strong></div>
+        <div class="vertical-note">ATELIER NORTE — DAILY EDITION</div>
+      </div>
+      <div class="hero-number">A/N <span>EST. 2026</span></div>
+    </section>
+
+    <section class="ticker" aria-label="Valores de la marca">
+      <span>DISEÑO CONSCIENTE</span><i>✳</i><span>PIEZAS VERSÁTILES</span><i>✳</i><span>ESTILO PROPIO</span><i>✳</i><span>DISEÑO CONSCIENTE</span>
+    </section>
+
+    <section class="section collection" id="coleccion">
+      <div class="section-head" id="novedades">
+        <div><p class="eyebrow dark"><span></span> SELECCIÓN DE TEMPORADA</p><h2>Favoritos de<br><em>la colección.</em></h2></div>
+        <p>Prendas fáciles de combinar, pensadas para acompañarte más allá de una sola temporada.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filtrar productos">
+        <button class="filter active" data-filter="todos">Ver todo</button>
+        <button class="filter" data-filter="mujer">Mujer</button>
+        <button class="filter" data-filter="hombre">Hombre</button>
+        <button class="filter" data-filter="accesorios">Accesorios</button>
+      </div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-category="mujer">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=85" alt="Look femenino con prendas neutras" loading="lazy"><span class="product-tag">NUEVO</span><button class="quick-add" data-product="Blazer Arena" aria-label="Consultar Blazer Arena">+</button></div>
+          <div class="product-meta"><div><h3>Blazer Arena</h3><p>Sastrería ligera · Beige</p></div><strong>$149.900</strong></div>
+        </article>
+        <article class="product-card" data-category="hombre">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=800&q=85" alt="Estilo casual masculino" loading="lazy"><span class="product-tag">MÁS VENDIDO</span><button class="quick-add" data-product="Camisa Esencial" aria-label="Consultar Camisa Esencial">+</button></div>
+          <div class="product-meta"><div><h3>Camisa Esencial</h3><p>Algodón · Blanco</p></div><strong>$89.900</strong></div>
+        </article>
+        <article class="product-card" data-category="mujer">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=85" alt="Conjunto urbano contemporáneo" loading="lazy"><button class="quick-add" data-product="Pantalón Studio" aria-label="Consultar Pantalón Studio">+</button></div>
+          <div class="product-meta"><div><h3>Pantalón Studio</h3><p>Corte recto · Negro</p></div><strong>$119.900</strong></div>
+        </article>
+        <article class="product-card" data-category="accesorios">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=85" alt="Complementos de moda" loading="lazy"><span class="product-tag">EDICIÓN LIMITADA</span><button class="quick-add" data-product="Bolso Daily" aria-label="Consultar Bolso Daily">+</button></div>
+          <div class="product-meta"><div><h3>Bolso Daily</h3><p>Diseño versátil · Café</p></div><strong>$79.900</strong></div>
+        </article>
+      </div>
+      <p class="demo-note">Productos, precios e imágenes ilustrativos. Reemplázalos por el catálogo real antes de publicar para una tienda.</p>
+    </section>
+
+    <section class="editorial" id="nosotros">
+      <div class="editorial-image"><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=85" alt="Selección de prendas y accesorios" loading="lazy"></div>
+      <div class="editorial-copy">
+        <p class="eyebrow"><span></span> NUESTRA ESENCIA</p>
+        <h2>Tu estilo.<br><em>Tus reglas.</em></h2>
+        <p>Creemos en un armario que trabaja contigo: siluetas que se adaptan, tonos que combinan y piezas que puedes hacer tuyas. Elegimos cada detalle para que vestirte sea una forma de expresarte, no una complicación.</p>
+        <a class="button button-light" href="#contacto">Hablemos de tu próximo look <span>↗</span></a>
+        <div class="editorial-sign">ATELIER NORTE <span>— VESTIR A TU MANERA</span></div>
+      </div>
+    </section>
+
+    <section class="benefits section">
+      <div class="benefit"><span>01</span><h3>Compra fácil</h3><p>Consulta tallas, disponibilidad y detalles directamente con nuestro equipo.</p></div>
+      <div class="benefit"><span>02</span><h3>Estilo versátil</h3><p>Encuentra piezas que puedes combinar para diferentes momentos.</p></div>
+      <div class="benefit"><span>03</span><h3>Atención cercana</h3><p>Te ayudamos a elegir la opción que mejor encaje contigo.</p></div>
+    </section>
+
+    <section class="contact-banner" id="contacto">
+      <div class="contact-content">
+        <p class="eyebrow"><span></span> ENCUENTRA TU PRÓXIMO FAVORITO</p>
+        <h2>¿Lo viste?<br><em>Hazlo tuyo.</em></h2>
+        <p>Escríbenos para consultar tallas, colores, disponibilidad y opciones de entrega.</p>
+        <a class="button button-dark" id="whatsappButton" href="#">Consultar por WhatsApp <span>↗</span></a>
+        <small>Atención personalizada · Compra por consulta</small>
+      </div>
+      <div class="contact-photo"><img src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1000&q=85" alt="Ropa organizada en una boutique" loading="lazy"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-main container">
+      <a class="logo footer-logo" href="#inicio">ATELIER<span>NORTE.</span></a>
+      <p>Una selección contemporánea para vestir a tu manera.</p>
+      <div class="footer-links"><a href="#coleccion">Colección</a><a href="#nosotros">Nuestra esencia</a><a href="#contacto">Contacto</a></div>
+      <div class="footer-contact"><strong>CONTACTO</strong><span>WhatsApp por configurar</span><span>Colombia</span></div>
+    </div>
+    <div class="footer-bottom container"><span>© <span id="year"></span> Atelier Norte · DEMO DE PORTAFOLIO</span><a href="#inicio">VOLVER ARRIBA ↑</a></div>
+  </footer>
+</body>
+</html>
